@@ -1,0 +1,8 @@
+#Comp Bio Notes 1.25.22 Console Command/terminal notes
+#Core Git Commands in terminal
+
+$ git status 	# chekcs current status of repository
+$ git add -A 	# adds altered and untracked files to staging area (to be committed later)
+$ git commit -am '<message>' # commits changes in staging area with a message (locally not on github yet, still need to "push")
+$ git push		# push commited files/changes up to github
+$ git pull		#pill any changes from Github down to local repository
