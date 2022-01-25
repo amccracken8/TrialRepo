@@ -14,7 +14,8 @@ output: html_document
 5. Settings -> github pages
 6. select main branch -> save -> publish 
 
-Site should be ready to be published at website address 
+
+Site should be ready to be published at website address. Editing the index.Rmd file, re-knitting it and pushing it to gitHub will update the website link automatically.   
 
 $ git status 	- checks current status of repository
 
