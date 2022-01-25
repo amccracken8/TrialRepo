@@ -5,6 +5,17 @@ date: "1/25/2022"
 output: html_document
 ---
 
+#Generating a Website through Github/Rmarkdown
+1. create R markdown file -> save as index.rmd (must be named 'index')
+2. knit to html
+3. commit and push to main (both idex.Rmd and index.html) 
+4. Go to GitHub repository for project
+5. Settings -> github pages
+6. select main branch -> save -> publish 
+
+Site should be ready to be publishehd at website address 
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
