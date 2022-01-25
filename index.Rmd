@@ -5,7 +5,8 @@ date: "1/25/2022"
 output: html_document
 ---
 
-#Generating a Website through Github/Rmarkdown
+## Generating a Website through Github/Rmarkdown
+
 1. create R markdown file -> save as index.rmd (must be named 'index')
 2. knit to html
 3. commit and push to main (both idex.Rmd and index.html) 
@@ -13,7 +14,17 @@ output: html_document
 5. Settings -> github pages
 6. select main branch -> save -> publish 
 
-Site should be ready to be publishehd at website address 
+Site should be ready to be published at website address 
+
+$ git status 	- checks current status of repository
+
+$ git add -A 	- adds altered and tracked files to staging area (to be committed later)
+
+$ git commit -am '<message>' - commits changes in staging area with a message (locally not on github yet, still need to "push")
+
+$ git push		- push commited files/changes up to github
+
+$ git pull		-pill any changes from Github down to local repository
 
 
 ```{r setup, include=FALSE}

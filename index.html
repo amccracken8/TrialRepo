@@ -171,6 +171,23 @@ pre code {
 </div>
 
 
+<div id="generating-a-website-through-githubrmarkdown" class="section level2">
+<h2>Generating a Website through Github/Rmarkdown</h2>
+<ol style="list-style-type: decimal">
+<li>create R markdown file -&gt; save as index.rmd (must be named ‘index’)</li>
+<li>knit to html</li>
+<li>commit and push to main (both idex.Rmd and index.html)</li>
+<li>Go to GitHub repository for project</li>
+<li>Settings -&gt; github pages</li>
+<li>select main branch -&gt; save -&gt; publish</li>
+</ol>
+<p>Site should be ready to be published at website address</p>
+<p>$ git status - checks current status of repository</p>
+<p>$ git add -A - adds altered and tracked files to staging area (to be committed later)</p>
+<p>$ git commit -am ‘<message>’ - commits changes in staging area with a message (locally not on github yet, still need to “push”)</p>
+<p>$ git push - push commited files/changes up to github</p>
+<p>$ git pull -pill any changes from Github down to local repository</p>
+</div>
 <div id="r-markdown" class="section level2">
 <h2>R Markdown</h2>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
