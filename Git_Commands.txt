@@ -6,3 +6,18 @@ $ git add -A 	# adds altered and untracked files to staging area (to be committe
 $ git commit -am '<message>' # commits changes in staging area with a message (locally not on github yet, still need to "push")
 $ git push		# push commited files/changes up to github
 $ git pull		#pill any changes from Github down to local repository
+
+$ git log --oneline    #prints a line of all the commits you have made
+$ git log -3 --oneline #prints the latest 3 commits 
+$ git log -1 -p HEAD   #shows the changes that were made in the file. 
+
+$ echo 'some "species" text' # returns exactly what you write after echo
+$ echo $PS1   #Returns the characters that appear before your command line in terminal. 
+$ PS1='$ '    #sets the beginning of a comand to the '$' symbol
+
+$ touch FileB.txt  #creates a new txt file name 'FileB.txt'
+$ >   #Pipe function this will overwrite a ine
+$ >>  #this is a pipe that will append a line, not replace it
+
+$ $ echo 'line of text' > FileB.txt   # adds a line to text file "line of text"
+$ cat fileB.txt   #prints out whatever is in a file
