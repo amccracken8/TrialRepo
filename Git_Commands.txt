@@ -1,23 +1,40 @@
 #Comp Bio Notes 1.25.22 Console Command/terminal notes
 #Core Git Commands in terminal
 
+##Git workflow
 $ git status 	# chekcs current status of repository
 $ git add -A 	# adds altered and untracked files to staging area (to be committed later)
 $ git commit -am '<message>' # commits changes in staging area with a message (locally not on github yet, still need to "push")
 $ git push		# push commited files/changes up to github
 $ git pull		#pill any changes from Github down to local repository
 
+#checking files form terminal
 $ git log --oneline    #prints a line of all the commits you have made
 $ git log -3 --oneline #prints the latest 3 commits 
 $ git log -1 -p HEAD   #shows the changes that were made in the file. 
 
+#printing text
 $ echo 'some "species" text' # returns exactly what you write after echo
 $ echo $PS1   #Returns the characters that appear before your command line in terminal. 
 $ PS1='$ '    #sets the beginning of a comand to the '$' symbol
 
+#Making text file and adding lines to it
 $ touch FileB.txt  #creates a new txt file name 'FileB.txt'
 $ >   #Pipe function this will overwrite a ine
 $ >>  #this is a pipe that will append a line, not replace it
-
 $ $ echo 'line of text' > FileB.txt   # adds a line to text file "line of text"
-$ cat fileB.txt   #prints out whatever is in a file
+$ cat fileB.txt   #prints out contense of any text file
+4 echo 'some text' > filename.txt # will create a file with the first ine with that text
+
+##Git Reset (when you make a mistake)
+$ ls  #lists files in current directory
+$ git reset .  #unstage documents you add to staging area through 'git add -A' function
+$ --  # points to a file in a directory
+$ git reset -- fileA.txt    #resets just File A out of the staging area
+$ git commit -m 'note'      #commits all files in staging area, not the ones not in staging
+
+$ rm filename.txt     #removes a file from the directory
+
+###coppying files over
+$cat fileF.txt > FileG.txt    #will coppy all contents of FileF and makes new file 'FileG' with all the information of F in G. 
+

@@ -1,0 +1,166 @@
+---
+title: "My First Markdown Document"
+author: "Andrew McCracken"
+date: "Febuary 1, 2022"
+output: 
+  html_document: 
+    highlight: tango
+---
+
+Add text here. just use it like a typewriter and add as much or as little as you like
+
+New text appears here in a separate paragraph
+
+Use 2 or more blank spaces at the end of a single-spaced line to write without spaces between lines  
+
+Andrew McCracken  
+Department of Biology  
+Unversity of Vermont  
+
+# First-Level Header
+
+## Second-Level Header
+
+### Third-Level Header
+
+Use edit R markdown format settings --> output options to change fonts, number section headings, and mess with other format options
+
+# Basic Text Formatting
+
+Italic *text*  
+Bold **Text**  
+Subscript ~text~  
+Superscript ^text^  
+Strike-through ~~text~~  
+
+# Lists:
+
+## Unordered Lists
+* Iten 1  
+* Item 2  
+    + Item 2a
+    + Item 2b
+
+## Ordered List
+1. Item 1  
+2. Item 2  
+3. Item 3  
+    + Item 3a  
+    + Item 3b
+    
+# Fencing:
+
+In line fencing with a back-tick `to show anything in plain text with *no* formatting` which can be useful for many things
+
+In line execution of r code inside the back-ticks by inserting r as the first element `r 3 + pi`
+
+3 back-ticks for a while section of plain text
+
+```
+everything in here is plaintext.
+even single lines. 
+
+useful especially when showing other coding instructions
+```
+
+# Block Quotes with `>`
+
+> to be or not to be, that is the question. wheather tis nobler.. blah blah blah
+
+# Spacing line with 3 or more underscores
+
+___ 
+
+adds a line between the text...
+
+# Links
+http://example.com
+
+[linked phrase](http://example.com) 
+
+# Images
+
+![alt text](https://example.com/logo.png)
+
+At the bottom of the document:
+
+[id]: https//example.com/ "title" 
+
+# Tables
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | *Formatted Text*
+
+___
+
+# LaTeX code for equations
+
+We set off equations with `$` for brackets.
+
+## In-Line vs Stand-Alone Equations
+
+These equations such as $a = 3 + 4$ will appear inside a single line of text
+
+These equations such as $$a = 3 + 4$$ will appear in a line of their own
+
+## Subscripts and Superscripts
+using the `_` for subscripts, `^` for superscripts, and `{}` for multiple items  
+$$H_0 = Z_{a + b}$$
+
+$$S = cA^z$$
+
+Elements can be coupled and nested
+
+$$S = cA^z_1 + z_{2+x}$$
+
+## Fractions and Greek Symbols
+use `\SymbolName` and type name of Greek symbol `\beta`   
+use `\frac{numerator}{denominator}` for fractions  
+$$\alpha = \frac{\beta}{\delta + \gamma_x}$$
+
+## Summation Signs
+
+$$z = \sum_{i=1}^x{K}$$
+
+## Escape the backslash with a costom term
+
+costom backslash term `\backslash`  
+$$\backslash \alpha \le b \backslash$$
+
+## Rendering plaintext in a LaTeX equation
+
+Without using plaintext rendering  
+$$P(Occurence of Species A) = Z$$
+
+with using plaintext rendering `\mbox{text}`
+$$P(\mbox{Occurence of Species A}) = Z$$
+
+
+# Code chunks
+
+```{r, echo=TRUE, eval=TRUE}
+# dont forget to start with comments!
+#preliminaries
+library(ggplot2)
+pred <- 1:10 #vector of 10 integers
+res <- runif(10) # random uniform values
+
+#print Random numbers
+print(res)
+
+#plot Graog
+qplot(x=pred, y=res)
+```
+
+now back to writing text in our markdown document, including LaTeX eqiuations if we need them as $a+b$ inserted in the middle of my sentence
+
+# Moving code from Markdown file to *.R file
+
+This will take all R code from a markdown file and turn it into an R.script
+```
+library(knitr)
+purl("name_of_markdown_file.rmd")
+```
+
