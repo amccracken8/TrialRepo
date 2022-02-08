@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\begin{document}
+
+% In LaTeX, the '%' sign for comment character
+
+%Remove the asteisk for numbered titles:
+
+\section*{Main Title}
+
+\subsection*{Second Level Title}
+
+\subsubsection*{Third Level Title}
+
+
+% `\\` indicates a single spaced new line rather than the double spaced carrot return
+Here is \textbf{bold faced}.\\
+Here is \textit{italic font}.\\
+here is \texttt{plain text}.
+
+``use two back ticks to start a quotation and two single quotes to end a quotation''.
+
+%Lists
+\begin{itemize}
+  \item first bullet point
+  \item second bullet point
+  \item third bullet point
+\end{itemize}
+
+\begin{enumerate}
+  \item first bullet point
+  \item second bullet point
+  \item third bullet point
+\end{enumerate}
+
+\begin{verbatim}
+text here is literal. with no formatting signs
+carful, there is also no margin control!
+\end{verbatim}
+
+\begin{quote}
+This Indents an entire paragraph for extended quotes
+\end{quote}
+
+% R Code  start: <<echo=TRUE>>=   End: @
+
+<<echo=TRUE>>=
+x <- runif(10)
+y <- runif(10)
+
+#comments as always a hashtag for R code
+
+plot(x,y)
+@
+
+% Website useful for LaTeX editor -> Overleaf.com
+
+Fortunately, most of what you do for writing in \LaTeX actually follows the rules for plain text
+
+
+
+\end{document}
